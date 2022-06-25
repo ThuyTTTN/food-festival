@@ -1,10 +1,9 @@
-const path = require("path");
 const webpack = require("webpack");
+const path = require("path");
 //import webpack-pwa-manifest
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 //import webpack bundle analyzer
-const BundleAnalyzerPlugin =
-  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const config = {
   //webpack 3 properties: entry, output, and mode
